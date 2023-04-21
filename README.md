@@ -12,4 +12,5 @@ thread 'tokio-runtime-worker' panicked at 'Threadsafe Function aborted lock fail
 ## Running the project
 - Install dependencies `yarn install`
 - Build project `yarn build`
-- Run project `ts-node segfault.ts`
+- Run faulty project `ts-node use_after_free.ts`
+- Run working project `ts-node fine.ts`
