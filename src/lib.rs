@@ -17,7 +17,7 @@ impl App {
 
   #[napi]
   pub async fn start(&self) {
-    loop {
+    for _ in 0..20 {
       println!("App value: {}", self.value);
 
       // We never change the value so this should never fail
